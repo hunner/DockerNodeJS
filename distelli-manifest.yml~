@@ -1,0 +1,5 @@
+distelli/DockerNodeJS:
+  Install:
+    - 'docker pull quay.io/distelli/distelli-docker'
+  PostInstall:
+    - 'docker run --cidfile="container.id" -p 49160:8080 -d quay.io/distelli/distelli-docker'

@@ -3,7 +3,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World from NodeJS, Docker & Distelli!');
+  response.send('Hello World from NodeJS, Docker & Distelli!! Woohoo!');
 });
 
 var port = process.env.PORT || 8080;
