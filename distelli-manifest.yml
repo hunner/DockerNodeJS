@@ -3,3 +3,4 @@ distelli/DockerNodeJS:
     - 'docker pull quay.io/distelli/distelli-docker'
   Exec:
     - 'exec docker run -p 49160:8080 quay.io/distelli/distelli-docker'
+    
