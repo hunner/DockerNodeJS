@@ -2,12 +2,12 @@
 
 FROM ubuntu:12.04
 
-RUN sudo apt-get -y update
-RUN sudo apt-get install -y software-properties-common
-RUN sudo apt-get install -y python-software-properties python g++ make
-RUN sudo add-apt-repository -y ppa:chris-lea/node.js
-RUN sudo apt-get -y update
-RUN sudo apt-get install -y nodejs
+RUN apt-get -y update
+RUN apt-get install -y software-properties-common
+RUN apt-get install -y python-software-properties python g++ make
+RUN add-apt-repository -y ppa:chris-lea/node.js
+RUN apt-get -y update
+RUN apt-get install -y nodejs
 
 ADD . /
 
